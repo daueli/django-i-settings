@@ -1,5 +1,5 @@
 # django-i-settings
-django-i-settings handle multiple settings files for development, testing and production
+django-i-settings handles multiple settings files for development, testing and production
 
 # Alpha version
 
@@ -23,3 +23,26 @@ For a development server type with redis active you might have the local_config.
       'feature_cache_redis_local',
     ]
 
+# References
+
+Main idea
+
+ - [http://stackoverflow.com/questions/5159852/managing-multiple-settings-py-files](http://stackoverflow.com/questions/5159852/managing-multiple-settings-py-files)
+
+Additional references for improvements and alternatives
+
+ - Splitting up the settings file [https://code.djangoproject.com/wiki/SplitSettings](https://code.djangoproject.com/wiki/SplitSettings)
+ - [http://stackoverflow.com/questions/1626326/how-to-manage-local-vs-production-settings-in-django](http://stackoverflow.com/questions/1626326/how-to-manage-local-vs-production-settings-in-django)
+ - [http://stackoverflow.com/questions/88259/how-do-you-configure-django-for-simple-development-and-deployment](http://stackoverflow.com/questions/88259/how-do-you-configure-django-for-simple-development-and-deployment)
+ - [http://django-configurations.readthedocs.org/en/latest/](http://django-configurations.readthedocs.org/en/latest/)
+
+# Future / TODO
+
+Include facility for virtualenv, ideas for example:
+
+ - [http://www.marinamele.com/2014/02/django-best-practices-i-different.html](http://www.marinamele.com/2014/02/django-best-practices-i-different.html)
+
+Include facility to print the selected settings as settings.py file for simple deploiment.
+
+ - python manage.py  diffsettings --all
+ - https://github.com/msabramo/django-print-settings
